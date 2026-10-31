@@ -17,3 +17,8 @@ output "gcs_bucket_name" {
   description = "GCS bucket name"
   value       = google_storage_bucket.soap_storage.name
 }
+
+output "workflow_name" {
+  description = "Cloud Workflows pipeline name"
+  value       = google_workflows_workflow.countries_pipeline.name
+}

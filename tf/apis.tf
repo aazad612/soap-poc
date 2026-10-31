@@ -9,7 +9,9 @@ resource "google_project_service" "enabled_apis" {
     "cloudbuild.googleapis.com",
     "artifactregistry.googleapis.com",
     "run.googleapis.com",
-    "dataform.googleapis.com"
+    "dataform.googleapis.com",
+    "cloudscheduler.googleapis.com",
+    "workflows.googleapis.com"
   ])
   project            = google_project.soappoc.project_id
   service            = each.key

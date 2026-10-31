@@ -226,3 +226,4 @@ __marimo__/
 *.tfvars
 *.tfvars.json
 sensitive.tfvars
+*.zip

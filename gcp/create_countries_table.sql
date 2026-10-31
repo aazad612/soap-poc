@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `bronze.countries` (
+CREATE TABLE IF NOT EXISTS `bronze.first_countries` (
   iso_code STRING OPTIONS(description="2-letter ISO country code"),
   name STRING OPTIONS(description="Country name"),
   capital_city STRING OPTIONS(description="Capital city"),

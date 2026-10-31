@@ -13,7 +13,8 @@ resource "google_project_iam_member" "sa_roles" {
     "roles/dataflow.worker",
     "roles/dataflow.admin",
     "roles/cloudfunctions.developer",
-    "roles/dataform.editor"
+    "roles/dataform.editor",
+    "roles/workflows.invoker"
   ])
   project = google_project.soappoc.project_id
   role    = each.key
